@@ -28,28 +28,6 @@
     <h1>Télécharger l'application iOS</h1>
     <p>Cliquez sur le bouton ci-dessous pour télécharger le fichier source iOS.</p>
 
-    <button class="btn" id="downloadButton">Télécharger iOS Source</button>
-
-    <script>
-        document.getElementById('downloadButton').addEventListener('click', function() {
-            // L'URL de ton fichier hébergé
-            const fileUrl = 'https://nolanorhanoff.github.io/downoald/ios_source.tar.gz';
-
-            // Crée un élément de lien (a) pour initier le téléchargement
-            const link = document.createElement('a');
-            link.href = fileUrl;
-            link.download = 'ios_source.tar.gz'; // Nom du fichier téléchargé
-            
-            // Ajoute le lien au DOM (mais ne l'affiche pas)
-            link.style.display = 'none';
-            document.body.appendChild(link);
-            
-            // Simule un clic sur le lien pour démarrer le téléchargement
-            link.click();
-            
-            // Supprime le lien après le téléchargement
-            document.body.removeChild(link);
-        });
-    </script>
+    <button class="btn" onclick="window.location.href='https://nolanorhanoff.github.io/downoald/ios_source.tar.gz'">Télécharger iOS Source</button>
 </body>
 </html>
